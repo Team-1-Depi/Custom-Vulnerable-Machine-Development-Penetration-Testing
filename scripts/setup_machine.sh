@@ -1,6 +1,6 @@
 #!/bin/bash
 # ==============================================================================
-# DEPI Graduation Project - Automated Boot2Root Machine Provisioning Script
+# DEPI Graduation Project - Automated Vulnerable Machine Provisioning Script
 # Target OS: Ubuntu Server 20.04 LTS
 # Features: 8 Open Ports (7 Rabbit Holes + 1 Real Web Entry), SQLi WAF v2.0,
 #           3-Layer File Upload Filter, Password Reuse, SUID PrivEsc,
