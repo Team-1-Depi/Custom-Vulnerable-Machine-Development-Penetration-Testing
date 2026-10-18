@@ -27,7 +27,9 @@ If you prefer to build the machine on a fresh **Ubuntu Server 20.04** installati
 bash
 
 wget  https://raw.githubusercontent.com/Team-1-Depi/Custom-Vulnerable-Machine-Development-Penetration-Testing/main/scripts/setup_machine.sh
+
 chmod +x setup_machine.sh
+
 sudo ./setup_machine.sh
 
 ---
