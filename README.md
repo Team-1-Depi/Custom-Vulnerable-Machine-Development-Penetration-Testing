@@ -1,4 +1,4 @@
-# 🛡️ DEPI Graduation Project: Custom Vulnerable Machine Development & Penetration Testing
+#  DEPI Graduation Project: Custom Vulnerable Machine Development & Penetration Testing
 
 **Initiative:** Digital Egypt Pioneers Initiative (DEPI)  
 **Track:** Cybersecurity & Ethical Hacking  
@@ -7,10 +7,10 @@
 
 ---
 
-## 📥 1. Download Ready-to-Use Virtual Machine (.OVA)
+##  1. Download Ready-to-Use Virtual Machine (.OVA)
 the complete `.ova` appliance is hosted on Google Drive:
 
-### 👉 **[Download DEPI-CTF.ova (Google Drive)]**
+###  **[Download DEPI-CTF.ova (Google Drive)]**
 https://drive.google.com/file/d/1EQRs67g06htNCYEeiYF0aew-eL3XcMdk/view?usp=sharing
 
 **How to Import & Run:**
@@ -21,7 +21,7 @@ https://drive.google.com/file/d/1EQRs67g06htNCYEeiYF0aew-eL3XcMdk/view?usp=shari
 
 ---
 
-## ⚡ 2. Automated Build from Scratch (`setup_machine.sh`)
+##  2. Automated Build from Scratch (`setup_machine.sh`)
 If you prefer to build the machine on a fresh **Ubuntu Server 20.04** installation instead of downloading the `.ova`, run our automated provisioning script which installs all services, configures the 8 ports, builds the MySQL database, deploys the PHP WAF filters, sets up Privilege Escalation, and executes a **Self-Verification Test**:
 
 bash
@@ -34,7 +34,7 @@ sudo ./setup_machine.sh
 
 ---
 
-## 🏗️ 3. Port Topology & Scenario Design
+##  3. Port Topology & Scenario Design
 When scanned with `nmap -sC -sV -p- <TARGET_IP>`, the machine exposes **exact 8 open ports**:
 
 | Port | Service | Role in CTF | Technical Configuration |
@@ -50,7 +50,7 @@ When scanned with `nmap -sC -sV -p- <TARGET_IP>`, the machine exposes **exact 8 
 
 ---
 
-## ⚔️ 4. Full Exploitation Kill Chain
+##  4. Full Exploitation Kill Chain
 1. **Network Enumeration (`Nmap`):** Identify the 8 open ports and eliminate the 7 decoys.
 2. **Stage 1 — SQLi WAF Bypass (Port `8080`):**
    * *Filter:* Blocks `--` and `;`, removes spaces, strips `OR/AND/UNION/SELECT` once (`str_ireplace`), and hashes passwords via `MD5`.
@@ -68,7 +68,7 @@ When scanned with `nmap -sC -sV -p- <TARGET_IP>`, the machine exposes **exact 8 
 
 ---
 
-## 📂 5. Repository Contents
+##  5. Repository Contents
 * `scripts/setup_machine.sh` — Full automated build and self-testing bash script.
 * `src/index.php` — Vulnerable login portal with custom WAF sanitizer v2.0.
 * `src/upload.php` — 3-layer filtered file uploader (Extension, MIME, Magic Bytes).
