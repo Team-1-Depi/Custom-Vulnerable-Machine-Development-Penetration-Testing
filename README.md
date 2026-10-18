@@ -8,9 +8,9 @@
 ---
 
 ## 📥 1. Download Ready-to-Use Virtual Machine (.OVA)
-Because the exported virtual machine image exceeds GitHub's 100 MB file limit, the complete `.ova` appliance is hosted on Google Drive:
+the complete `.ova` appliance is hosted on Google Drive:
 
-### 👉 **[Download DEPI-Pioneer-CTF.ova (Google Drive)]**
+### 👉 **[Download DEPI-CTF.ova (Google Drive)]**
 https://drive.google.com/file/d/1EQRs67g06htNCYEeiYF0aew-eL3XcMdk/view?usp=sharing
 
 **How to Import & Run:**
