@@ -112,7 +112,4 @@ Custom-Vulnerable-Machine-Development-Penetration-Testing/
 ```
 
 
-└── docs/
-      ├── Project plan.pdf               # Project Plan
-      └── OFFICIAL_PROJECT_REPORT.md     # Full technical documentation & walkthrough
 
