@@ -93,29 +93,24 @@ When scanned with `nmap -sC -sV -p- <TARGET_IP>`, the machine exposes **exact 8 
 
 ## 6. Repository Directory Structure
 
-**Custom-Vulnerable-Machine-Development-Penetration-Testing/**
-
+```text
+Custom-Vulnerable-Machine-Development-Penetration-Testing/
 ├── README.md
-
 ├── scripts/
-
-│     ├── setup_machine.sh               # Automated vulnerable lab builder
-
-│     └── patch_machine.sh               # Automated Blue Team remediation script
-
+│   ├── setup_machine.sh            # Automated vulnerable lab builder
+│   └── patch_machine.sh            # Automated Blue Team remediation script
 ├── src/
+│   ├── vulnerable/
+│   │   ├── index.php               # Vulnerable login (Flawed WAF + SQLi)
+│   │   └── upload.php              # Vulnerable uploader (Blacklist + Header MIME + 6-byte Magic)
+│   └── patched/
+│       ├── index.php               # Patched login (Prepared Statements + Bcrypt)
+│       └── upload.php              # Patched uploader (Strict Whitelist + finfo + UUID)
+└── docs/
+    ├── Project plan.pdf            # Project Plan
+    └── OFFICIAL_PROJECT_REPORT.md  # Full technical documentation & walkthrough
+```
 
-│     ├── vulnerable/
-
-│     │   ├── index.php                  # Vulnerable login (Flawed WAF + SQLi)
-
-│     │   └── upload.php                 # Vulnerable uploader (Blacklist + Header MIME + 6-byte Magic)
-
-│     └── patched/
-
-│         ├── index.php                  # Patched login (Prepared Statements + Bcrypt)
-
-│         └── upload.php                 # Patched uploader (Strict Whitelist + finfo + UUID)
 
 └── docs/
       ├── Project plan.pdf               # Project Plan
