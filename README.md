@@ -1,7 +1,7 @@
 # 🛡️ Custom-Vulnerable-Machine-Development-Penetration-Testing
 
 **Initiative:** Digital Egypt Pioneers Initiative (DEPI) — Graduation Project  
-**Track:** Cybersecurity & Ethical Hacking  
+**Track:** Vulnerability Analyst and Penetration Tester
 **Project Title:** Custom Vulnerable Machine Development & Penetration Testing  
 **Base OS:** Ubuntu Server 20.04 LTS  
 **Architecture:** 8 Open Ports (7 Decoy Rabbit Holes + 1 Chained Web-to-Root Entry Point)
