@@ -99,25 +99,25 @@ When scanned with `nmap -sC -sV -p- <TARGET_IP>`, the machine exposes **exact 8 
 
 ├── scripts/
 
-│   ├── setup_machine.sh               # Automated vulnerable lab builder
+│     ├── setup_machine.sh               # Automated vulnerable lab builder
 
-│   └── patch_machine.sh               # Automated Blue Team remediation script
+│     └── patch_machine.sh               # Automated Blue Team remediation script
 
 ├── src/
 
-│   ├── vulnerable/
+│     ├── vulnerable/
 
-│   │   ├── index.php                  # Vulnerable login (Flawed WAF + SQLi)
+│     │   ├── index.php                  # Vulnerable login (Flawed WAF + SQLi)
 
-│   │   └── upload.php                 # Vulnerable uploader (Blacklist + Header MIME + 6-byte Magic)
+│     │   └── upload.php                 # Vulnerable uploader (Blacklist + Header MIME + 6-byte Magic)
 
-│   └── patched/
+│     └── patched/
 
-│       ├── index.php                  # Patched login (Prepared Statements + Bcrypt)
+│         ├── index.php                  # Patched login (Prepared Statements + Bcrypt)
 
-│       └── upload.php                 # Patched uploader (Strict Whitelist + finfo + UUID)
+│         └── upload.php                 # Patched uploader (Strict Whitelist + finfo + UUID)
 
 └── docs/
-    ├── Project plan.pdf               # Project Plan
-    └── OFFICIAL_PROJECT_REPORT.md     # Full technical documentation & walkthrough
+      ├── Project plan.pdf               # Project Plan
+      └── OFFICIAL_PROJECT_REPORT.md     # Full technical documentation & walkthrough
 
