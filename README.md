@@ -59,7 +59,7 @@ When scanned with `nmap -sC -sV -p- <TARGET_IP>`, the machine exposes **exact 8 
    * *Filter 1 (Extension Blacklist):* Bypassed by renaming `shell.php` to `shell.phtml`.
    * *Filter 2 (MIME Type Check):* Bypassed in Burp Suite by changing `Content-Type` to `image/gif`.
    * *Filter 3 (Magic Bytes Check):* Bypassed by prepending `GIF89a;` to the payload body.
-4. **Stage 3 — Post-Exploitation & Lateral Movement (`www-data` -> `pioneer`):**
+4. **Stage 3 — Post-Exploitation (`www-data` -> `pioneer`):**
    * Receive Meterpreter session via `msfconsole` (`exploit/multi/handler`).
    * Extract database credentials (`Pioneer@2026_Pass!`) from `/var/www/portal/index.php` and leverage **Password Reuse (CWE-521)** to switch to OS user `pioneer` and capture `/home/pioneer/user.txt`.
 5. **Stage 4 — Privilege Escalation (`pioneer` -> `root`):**
